@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="uri://alcatel.com/apc/9.7">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:configure>
+              <objectName>ADSL_ZTE_DNAME:FTTH_ZTE_PID</objectName>
+            <templateName>IOP-ONT-HSI</templateName>
+            <argument>
+               <name>ontVeipPortQosProfiles_BandwidthProfileUsQueue0</name>
+               <value>US_HSI_50M</value>
+            </argument>
+            <argument>
+               <name>networkVlanName</name>
+               <value>SLT_HSI</value>
+            </argument>
+      </ns:configure>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="uri://alcatel.com/apc/9.6">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:configure>
+         <objectName>ADSL_ZTE_DNAME:FTTH_ZTE_PID</objectName>
+         <templateName>IOP-ONT-VOICE</templateName>
+         <templateVersion>1</templateVersion>
+         <argument>
+            <name>networkVlanName</name>
+            <value>SLT_VOBB</value>
+         </argument>
+         <argument>
+            <name>potsPortCustomerInfo</name>
+            <value>REGID</value>
+         </argument>
+         <argument>
+            <name>sipMgcAgent_AuthenticationInfo_Password</name>
+            <value>PWD</value>
+         </argument>
+         <argument>
+            <name>sipMgcAgent_AuthenticationInfo_Username</name>   
+            <value>+IMS_USERIDF0@sltims.lk</value>
+         </argument>
+         <argument>
+            <name>sipMgcAgent_SipAgentInfo_CustomerId</name>
+            <value>REGID</value>
+         </argument>
+         <argument>
+            <name>sipMgcAgent_SipAgentInfo_UserId</name>
+            <value>+IMS_USERID</value>
+         </argument>
+      </ns:configure>
+   </soapenv:Body>
+</soapenv:Envelope>

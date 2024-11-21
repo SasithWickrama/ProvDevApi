@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="uri://alcatel.com/apc/9.7">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:configure>
+            <objectName>ADSL_ZTE_DNAME:FTTH_ZTE_PID</objectName>
+            <templateName>IOP-ONT-VOICE</templateName>
+            
+            <argument>
+               <name>networkVlanName</name>
+               <value>SLT_VOBB</value>
+            </argument>           
+      </ns:configure>
+   </soapenv:Body>
+</soapenv:Envelope>

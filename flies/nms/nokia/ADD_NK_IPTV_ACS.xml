@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="uri://alcatel.com/apc/9.7">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:configure>
+            <objectName>ADSL_ZTE_DNAME:FTTH_ZTE_PID</objectName>
+            <templateName>IOP-ONT-1IPTV-ETH2</templateName>
+            <argument>
+               <name>ontEthPortQosProfiles_BandwidthProfileUsQueue4</name>
+               <value>US_IPTV_128K</value>
+            </argument>
+            <argument>
+               <name>networkVlanName</name>
+               <value>SLT_IPTV_UC</value>
+            </argument>
+      </ns:configure>
+   </soapenv:Body>
+</soapenv:Envelope>

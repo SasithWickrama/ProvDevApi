@@ -1,0 +1,43 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://ispp.com.cn/ispp_npi/">
+    <SOAP-ENV:Header>
+        <ns1:Username>provhss</ns1:Username>
+        <ns1:Password>ProvSlt_2020</ns1:Password>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns1:root>
+            <msg_head>
+                <time>DT</time>
+                <msg_type>Call</msg_type>
+                <serial>DSERIAL</serial>
+            </msg_head>
+            <interface_msg>
+                <directive>
+                    <HSSClass Name="HSSExtSOAP">
+                        <HSSMethod Name="CreateIMSSub">
+                            <SUBID>+IMS_USERID@sltims.lk</SUBID>
+                            <PVILIST>+IMS_USERIDF0@sltims.lk</PVILIST>
+                            <PVIIDLIST>1</PVIIDLIST>
+                            <AUTHENTICATIONTYPELIST>1</AUTHENTICATIONTYPELIST>
+                            <USERNAMELIST>+IMS_USERIDF0@sltims.lk</USERNAMELIST>
+                            <PASSWORDLIST>PWD</PASSWORDLIST>
+                            <REALMLIST>sltims.lk</REALMLIST>                                                    
+                            <PUILIST>sip:+IMS_USERID@sltims.lk$tel:+IMS_USERID</PUILIST>
+                            <PUIIDLIST>1$2</PUIIDLIST>
+                            <VIUILIST>1$1$1$2</VIUILIST>
+                            <BARFLAGLIST>0$0</BARFLAGLIST>
+                            <CHARGTP>0</CHARGTP>
+                            <SPIDLIST>65535$65535</SPIDLIST>
+                            <IRISIDLIST>1$1</IRISIDLIST>
+                            <ALIASIDLIST>1$1</ALIASIDLIST>
+                            <DFTPUIIDLIST>1</DFTPUIIDLIST>
+                            <ROAMSCHIDLIST>1$1</ROAMSCHIDLIST>
+                            <SOAPSIFCIDList>1$1</SOAPSIFCIDList>
+                            <SRVPRIORITYLEVELLIST>2$2</SRVPRIORITYLEVELLIST>
+                        </HSSMethod>
+                    </HSSClass>
+                </directive>
+            </interface_msg>
+        </ns1:root>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,3912 @@
+2024-11-20 15:43:31,243-INFO-KnWsWJIwgoK13wX Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HK_MA5800X17_09', 'FTTH_ZTE_PID': '0-8-14', 'FTTH_HUW_VP': '36', 'FTTH_ONT_SN': 'TDTC3B00FEF0', 'IMS_USERID': '94112081046', 'REGID': '0112081046', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '11', 'VOICEPORT': '1', 'PWD': 'EOQl3z7EVypP0hA', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '8', 'FTTH_HUW_PN': '14'}
+2024-11-20 15:43:31,244-INFO-KnWsWJIwgoK13wX Input Data : VOBB 
+2024-11-20 15:43:31,244-INFO-KnWsWJIwgoK13wX command xml : lst_vlan_huawei.xml
+2024-11-20 15:43:31,626-INFO-KnWsWJIwgoK13wX <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>HK_MA5800X17_09</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 15:43:31,626-INFO-KnWsWJIwgoK13wX Response : =================================
+2024-11-20 15:43:31,645-INFO-KnWsWJIwgoK13wX<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-20 15:43:33</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341403</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONEACCESS_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONEACCESS_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>32</VLANID>
+<ALIAS>VLANID_32</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>75</VLANID>
+<ALIAS>MSBR_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>MSBR_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>77</VLANID>
+<ALIAS>ENT_CPE_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ENT_CPE_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>101</VLANID>
+<ALIAS>D96879_SAMPATH_BK</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96879_SAMPATH_BK</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>103</VLANID>
+<ALIAS>D95426_COM_BK_OF_CEYLON_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D95426_COM_BK_OF_CEYLON_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>104</VLANID>
+<ALIAS>E1101383_SOFTLOGIC_COM_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1101383_SOFTLOGIC_COM_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>105</VLANID>
+<ALIAS>E1104525_NOVUSTECH_TRANSACT</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1104525_NOVUSTECH_TRANSACT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>106</VLANID>
+<ALIAS>E1104524_NOVUSTECH_TL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1104524_NOVUSTECH_TL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>107</VLANID>
+<ALIAS>E1108390_ICRC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108390_ICRC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>108</VLANID>
+<ALIAS>E1106120_LANKA_SATHOSA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1106120_LANKA_SATHOSA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>109</VLANID>
+<ALIAS>E1110015</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110015</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>661</VLANID>
+<ALIAS>VLANID_661</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1582</VLANID>
+<ALIAS>VLANID_1582</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1682</VLANID>
+<ALIAS>VLANID_1682</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1893</VLANID>
+<ALIAS>PEO_TV_OUTER_VLAN</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>PEO_TV_OUTER_VLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1900</VLANID>
+<ALIAS>E_NET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E_NET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3001</VLANID>
+<ALIAS>D93684_NATIONAL_GEM_JEWELLERY</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D93684_NATIONAL_GEM_JEWELLERY</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3002</VLANID>
+<ALIAS>D97190_TFO_CLOTHING</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D97190_TFO_CLOTHING</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3003</VLANID>
+<ALIAS>E1102909_HNB</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102909_HNB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3004</VLANID>
+<ALIAS>D96370_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96370_CARGILLS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3005</VLANID>
+<ALIAS>E1102358_PBK</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102358_PBK</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3006</VLANID>
+<ALIAS>D96391_CARGILLS_FOOD_PRO_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96391_CARGILLS_FOOD_PRO_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3007</VLANID>
+<ALIAS>D96372_CEYLON_THEATRES</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96372_CEYLON_THEATRES</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3008</VLANID>
+<ALIAS>VLANID_3008</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D97643_CARGILLS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3009</VLANID>
+<ALIAS>D78331_PARADISE_ROAD_COL_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D78331_PARADISE_ROAD_COL_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3010</VLANID>
+<ALIAS>VLANID_3010</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1100759_HAMEEDIA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3011</VLANID>
+<ALIAS>E1101220_INT_COMMITE_OF_REDCROSS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1101220_INT_COMMITE_OF_REDCROSS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3013</VLANID>
+<ALIAS>E1102450_ROYAL_NETHERLAND</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102450_ROYAL_NETHERLAND</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3014</VLANID>
+<ALIAS>VLANID_3014</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102623_ELEGANT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3015</VLANID>
+<ALIAS>VLANID_3015</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103214_PEOPLES_BANK</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3016</VLANID>
+<ALIAS>E1103577_BLISS_MARKETING</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103577_BLISS_MARKETING</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3017</VLANID>
+<ALIAS>VLANID_3017</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103744_NDB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3018</VLANID>
+<ALIAS>VLANID_3018</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103599_BOC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3019</VLANID>
+<ALIAS>E1102048_IRAN_EMBASSY</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102048_IRAN_EMBASSY</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3020</VLANID>
+<ALIAS>E1109160_ZILLIONE_SYSTEMS_SOL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109160_ZILLIONE_SYSTEMS_SOL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3021</VLANID>
+<ALIAS>E1109495_CERTIS_LANKA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109495_CERTIS_LANKA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3022</VLANID>
+<ALIAS>VLANID_3022</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108196_HUMMING_BIRD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3023</VLANID>
+<ALIAS>E1108731_KANDY_KADAWATHA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108731_KANDY_KADAWATHA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3024</VLANID>
+<ALIAS>VLANID_3024</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109178_CEB_COLOMBO</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3025</VLANID>
+<ALIAS>E1109653_BROWN_AND_COMPANY_PLC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109653_BROWN_AND_COMPANY_PLC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3026</VLANID>
+<ALIAS>E1110034_SEYLAN_BANK_PLC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110034_SEYLAN_BANK_PLC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3027</VLANID>
+<ALIAS>VLANID_3027</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110152_SEYLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3028</VLANID>
+<ALIAS>E1111294_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111294_CARGILLS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3029</VLANID>
+<ALIAS>E1111850_LABOUR_DEPT</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111850_LABOUR_DEPT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3030</VLANID>
+<ALIAS>E1108101_ANVERALLY_AND_SONS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108101_ANVERALLY_AND_SONS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3031</VLANID>
+<ALIAS>E1105155_VALLIBEL_FINANCE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1105155_VALLIBEL_FINANCE</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:31,645-INFO-KnWsWJIwgoK13wX 0 Succeeded.
+2024-11-20 15:43:31,645-INFO-KnWsWJIwgoK13wX End   : =========================================================================
+2024-11-20 15:43:31,646-INFO-KnWsWJIwgoK13wX Start : =========================================================================
+2024-11-20 15:43:31,646-INFO-KnWsWJIwgoK13wX Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HK_MA5800X17_09', 'FTTH_ZTE_PID': '0-8-14', 'FTTH_HUW_VP': '36', 'FTTH_ONT_SN': 'TDTC3B00FEF0', 'IMS_USERID': '94112081046', 'REGID': '0112081046', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '11', 'VOICEPORT': '1', 'PWD': 'EOQl3z7EVypP0hA', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '8', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1582', 'IPTVLAN': '1682'}
+2024-11-20 15:43:31,646-INFO-KnWsWJIwgoK13wX Input Data : Entree SVLAN
+2024-11-20 15:43:31,646-INFO-KnWsWJIwgoK13wX command xml : lst_vlan_huawei.xml
+2024-11-20 15:43:31,890-INFO-KnWsWJIwgoK13wX <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>HK_MA5800X17_09</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 15:43:31,890-INFO-KnWsWJIwgoK13wX Response : =================================
+2024-11-20 15:43:31,891-INFO-KnWsWJIwgoK13wX<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-20 15:43:33</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341403</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONEACCESS_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONEACCESS_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>32</VLANID>
+<ALIAS>VLANID_32</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>75</VLANID>
+<ALIAS>MSBR_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>MSBR_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>77</VLANID>
+<ALIAS>ENT_CPE_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ENT_CPE_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>101</VLANID>
+<ALIAS>D96879_SAMPATH_BK</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96879_SAMPATH_BK</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>103</VLANID>
+<ALIAS>D95426_COM_BK_OF_CEYLON_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D95426_COM_BK_OF_CEYLON_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>104</VLANID>
+<ALIAS>E1101383_SOFTLOGIC_COM_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1101383_SOFTLOGIC_COM_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>105</VLANID>
+<ALIAS>E1104525_NOVUSTECH_TRANSACT</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1104525_NOVUSTECH_TRANSACT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>106</VLANID>
+<ALIAS>E1104524_NOVUSTECH_TL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1104524_NOVUSTECH_TL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>107</VLANID>
+<ALIAS>E1108390_ICRC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108390_ICRC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>108</VLANID>
+<ALIAS>E1106120_LANKA_SATHOSA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1106120_LANKA_SATHOSA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>109</VLANID>
+<ALIAS>E1110015</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110015</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>661</VLANID>
+<ALIAS>VLANID_661</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1582</VLANID>
+<ALIAS>VLANID_1582</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1682</VLANID>
+<ALIAS>VLANID_1682</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1893</VLANID>
+<ALIAS>PEO_TV_OUTER_VLAN</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>PEO_TV_OUTER_VLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>1900</VLANID>
+<ALIAS>E_NET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E_NET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3001</VLANID>
+<ALIAS>D93684_NATIONAL_GEM_JEWELLERY</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D93684_NATIONAL_GEM_JEWELLERY</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3002</VLANID>
+<ALIAS>D97190_TFO_CLOTHING</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D97190_TFO_CLOTHING</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3003</VLANID>
+<ALIAS>E1102909_HNB</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102909_HNB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3004</VLANID>
+<ALIAS>D96370_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96370_CARGILLS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3005</VLANID>
+<ALIAS>E1102358_PBK</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102358_PBK</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3006</VLANID>
+<ALIAS>D96391_CARGILLS_FOOD_PRO_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96391_CARGILLS_FOOD_PRO_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3007</VLANID>
+<ALIAS>D96372_CEYLON_THEATRES</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96372_CEYLON_THEATRES</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3008</VLANID>
+<ALIAS>VLANID_3008</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D97643_CARGILLS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3009</VLANID>
+<ALIAS>D78331_PARADISE_ROAD_COL_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D78331_PARADISE_ROAD_COL_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3010</VLANID>
+<ALIAS>VLANID_3010</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1100759_HAMEEDIA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3011</VLANID>
+<ALIAS>E1101220_INT_COMMITE_OF_REDCROSS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1101220_INT_COMMITE_OF_REDCROSS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3013</VLANID>
+<ALIAS>E1102450_ROYAL_NETHERLAND</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102450_ROYAL_NETHERLAND</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3014</VLANID>
+<ALIAS>VLANID_3014</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102623_ELEGANT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3015</VLANID>
+<ALIAS>VLANID_3015</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103214_PEOPLES_BANK</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3016</VLANID>
+<ALIAS>E1103577_BLISS_MARKETING</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103577_BLISS_MARKETING</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3017</VLANID>
+<ALIAS>VLANID_3017</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103744_NDB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3018</VLANID>
+<ALIAS>VLANID_3018</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103599_BOC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3019</VLANID>
+<ALIAS>E1102048_IRAN_EMBASSY</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1102048_IRAN_EMBASSY</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3020</VLANID>
+<ALIAS>E1109160_ZILLIONE_SYSTEMS_SOL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109160_ZILLIONE_SYSTEMS_SOL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3021</VLANID>
+<ALIAS>E1109495_CERTIS_LANKA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109495_CERTIS_LANKA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3022</VLANID>
+<ALIAS>VLANID_3022</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108196_HUMMING_BIRD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3023</VLANID>
+<ALIAS>E1108731_KANDY_KADAWATHA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108731_KANDY_KADAWATHA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3024</VLANID>
+<ALIAS>VLANID_3024</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109178_CEB_COLOMBO</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3025</VLANID>
+<ALIAS>E1109653_BROWN_AND_COMPANY_PLC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109653_BROWN_AND_COMPANY_PLC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3026</VLANID>
+<ALIAS>E1110034_SEYLAN_BANK_PLC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110034_SEYLAN_BANK_PLC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3027</VLANID>
+<ALIAS>VLANID_3027</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110152_SEYLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3028</VLANID>
+<ALIAS>E1111294_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111294_CARGILLS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3029</VLANID>
+<ALIAS>E1111850_LABOUR_DEPT</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111850_LABOUR_DEPT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3030</VLANID>
+<ALIAS>E1108101_ANVERALLY_AND_SONS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108101_ANVERALLY_AND_SONS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341403</DID>
+<VLANID>3031</VLANID>
+<ALIAS>E1105155_VALLIBEL_FINANCE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1105155_VALLIBEL_FINANCE</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:31,891-INFO-KnWsWJIwgoK13wX 0 Succeeded.
+2024-11-20 15:43:31,891-INFO-KnWsWJIwgoK13wX End   : =========================================================================
+2024-11-20 15:43:31,892-INFO-KnWsWJIwgoK13wX Start : =========================================================================
+2024-11-20 15:43:31,892-INFO-KnWsWJIwgoK13wX Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HK_MA5800X17_09', 'FTTH_ZTE_PID': '0-8-14', 'FTTH_HUW_VP': '36', 'FTTH_ONT_SN': 'TDTC3B00FEF0', 'IMS_USERID': '94112081046', 'REGID': '0112081046', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '11', 'VOICEPORT': '1', 'PWD': 'EOQl3z7EVypP0hA', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '8', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1582', 'IPTVLAN': '1682'}
+2024-11-20 15:43:31,892-INFO-KnWsWJIwgoK13wX command xml : ADD_ONT_HUAWEI_ACS.xml
+2024-11-20 15:43:32,562-INFO-KnWsWJIwgoK13wX <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>clarity</wsse:Username>
+        <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+</wsse:Security>
+</soapenv:Header>
+<soapenv:Body>
+    <os:ADD-ONT>
+        <os:MODIFIER>ONT</os:MODIFIER>
+        <os:object>
+            <os:DEV>HK_MA5800X17_09</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>8</os:SN>
+            <os:PN>14</os:PN>
+            <os:ONTID>36</os:ONTID>
+        </os:object>
+        <os:Session>1</os:Session>
+        <os:objectParas>
+            <ALIAS>94112081046</ALIAS>
+            <LINEPROF>IOP-ONT</LINEPROF>
+            <SRVPROF></SRVPROF>
+            <os:SERIALNUM>TDTC3B00FEF0</os:SERIALNUM>
+            <os:AUTH>SN</os:AUTH>
+            <os:AUTHTIMEOUT></os:AUTHTIMEOUT>
+            <os:VAPROFILE></os:VAPROFILE>
+        </os:objectParas>
+    </os:ADD-ONT>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:32,562-INFO-KnWsWJIwgoK13wX Response : =================================
+2024-11-20 15:43:32,565-INFO-KnWsWJIwgoK13wX<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:ADDResponse>
+<os:dateTime>2024-11-20 15:43:34</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:ADDResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:32,566-INFO-KnWsWJIwgoK13wX 0 Succeeded.
+2024-11-20 15:43:32,566-INFO-KnWsWJIwgoK13wX End   : =========================================================================
+2024-11-20 15:43:32,566-INFO-KnWsWJIwgoK13wX Start : =========================================================================
+2024-11-20 15:43:32,566-INFO-KnWsWJIwgoK13wX Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HK_MA5800X17_09', 'FTTH_ZTE_PID': '0-8-14', 'FTTH_HUW_VP': '36', 'FTTH_ONT_SN': 'TDTC3B00FEF0', 'IMS_USERID': '94112081046', 'REGID': '0112081046', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '11', 'VOICEPORT': '1', 'PWD': 'EOQl3z7EVypP0hA', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '8', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1582', 'IPTVLAN': '1682'}
+2024-11-20 15:43:32,566-INFO-KnWsWJIwgoK13wX command xml : ADD_INT_HUAWEI.xml
+2024-11-20 15:43:32,937-INFO-KnWsWJIwgoK13wX <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:CREATE-SERVICEPORT>
+         <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+         <os:object>
+            <os:DEV>HK_MA5800X17_09</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>8</os:SN>
+            <os:PN>14</os:PN>
+         </os:object>
+         <os:Session>1</os:Session>
+         <os:objectParas>
+            <os:VLANID>1582</os:VLANID>
+            <os:ONTID>36</os:ONTID>
+            <os:GEMPORTID>20</os:GEMPORTID>
+            <os:TX>50_Mbps</os:TX>
+            <os:RX>100_Mbps</os:RX>
+            <os:INNERVLANID>1000</os:INNERVLANID>
+            <os:UV>20</os:UV>
+            <os:TAGTRANSFORM>3</os:TAGTRANSFORM>
+         </os:objectParas>
+      </os:CREATE-SERVICEPORT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:32,937-INFO-KnWsWJIwgoK13wX Response : =================================
+2024-11-20 15:43:32,941-INFO-KnWsWJIwgoK13wX<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-20 15:43:34</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:32,941-INFO-KnWsWJIwgoK13wX 0 Succeeded.
+2024-11-20 15:43:32,941-INFO-KnWsWJIwgoK13wX End   : =========================================================================
+2024-11-20 15:43:32,942-INFO-KnWsWJIwgoK13wX Start : =========================================================================
+2024-11-20 15:43:32,942-INFO-KnWsWJIwgoK13wX Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HK_MA5800X17_09', 'FTTH_ZTE_PID': '0-8-14', 'FTTH_HUW_VP': '36', 'FTTH_ONT_SN': 'TDTC3B00FEF0', 'IMS_USERID': '94112081046', 'REGID': '0112081046', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '11', 'VOICEPORT': '1', 'PWD': 'EOQl3z7EVypP0hA', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '8', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1582', 'IPTVLAN': '1682'}
+2024-11-20 15:43:32,942-INFO-KnWsWJIwgoK13wX command xml : ADD_VOICE_HUAWEI.xml
+2024-11-20 15:43:33,254-INFO-KnWsWJIwgoK13wX <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:CREATE-SERVICEPORT>
+            <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+            <os:object>
+                <os:DEV>HK_MA5800X17_09</os:DEV>
+                <os:FN>0</os:FN>
+                <os:SN>8</os:SN>
+                <os:PN>14</os:PN>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:VLANID>661</os:VLANID>
+                <os:ONTID>36</os:ONTID>
+                <os:GEMPORTID>10</os:GEMPORTID>
+                <os:TX>SIP_VOICE</os:TX>
+                <os:RX>SIP_VOICE</os:RX>
+                <os:UV>10</os:UV>
+                <os:TAGTRANSFORM>2</os:TAGTRANSFORM>
+            </os:objectParas>
+        </os:CREATE-SERVICEPORT>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 15:43:33,254-INFO-KnWsWJIwgoK13wX Response : =================================
+2024-11-20 15:43:33,254-INFO-KnWsWJIwgoK13wX<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-20 15:43:34</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 15:43:33,254-INFO-KnWsWJIwgoK13wX 0 Succeeded.
+2024-11-20 15:43:33,254-INFO-KnWsWJIwgoK13wX End   : =========================================================================
+2024-11-20 16:41:39,735-INFO-16D1sMI1zhIutG6 Start : =========================================================================
+2024-11-20 16:41:39,735-INFO-16D1sMI1zhIutG6 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'JA_MA5600T_01', 'FTTH_ZTE_PID': '0-18-0', 'FTTH_ONT_SN': 'DFCD24B91BC8', 'IMS_USERID': '94212222153', 'FTTH_HUW_VP': '1', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '18', 'FTTH_HUW_PN': '0'}
+2024-11-20 16:41:39,735-INFO-16D1sMI1zhIutG6 command xml : DEL_ONT_HUAWEI.xml
+2024-11-20 16:41:40,556-INFO-16D1sMI1zhIutG6 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:DELETE-ONT>
+         <os:MODIFIER>ONT</os:MODIFIER>
+         <os:object>
+            <os:DEV>JA_MA5600T_01</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>18</os:SN>
+            <os:PN>0</os:PN>
+            <os:ONTID>1</os:ONTID>
+            <os:PWD></os:PWD>
+         </os:object>
+         <os:Session>1</os:Session>
+      </os:DELETE-ONT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:41:40,556-INFO-16D1sMI1zhIutG6 Response : =================================
+2024-11-20 16:41:40,561-INFO-16D1sMI1zhIutG6<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:DELETEResponse>
+<os:dateTime>2024-11-20 16:41:42</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:DELETEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:41:40,561-INFO-16D1sMI1zhIutG6 0 Succeeded.
+2024-11-20 16:41:40,561-INFO-16D1sMI1zhIutG6 End   : =========================================================================
+2024-11-20 16:44:37,377-INFO-sPtuePyC50HPCFE Start : =========================================================================
+2024-11-20 16:44:37,377-INFO-sPtuePyC50HPCFE Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'JA_MA5600T_01', 'FTTH_ZTE_PID': '0-18-0', 'FTTH_HUW_VP': '1', 'FTTH_ONT_SN': 'TDTC3B01BE10', 'IMS_USERID': '94212222153', 'REGID': '0212222153', 'IPTVCOUNT': '0', 'BBCOUNT': '0', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'z8lRG7lVjGJz4IQ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '18', 'FTTH_HUW_PN': '0'}
+2024-11-20 16:44:37,377-INFO-sPtuePyC50HPCFE Input Data : VOBB 
+2024-11-20 16:44:37,377-INFO-sPtuePyC50HPCFE command xml : lst_vlan_huawei.xml
+2024-11-20 16:44:37,590-INFO-sPtuePyC50HPCFE <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>JA_MA5600T_01</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 16:44:37,590-INFO-sPtuePyC50HPCFE Response : =================================
+2024-11-20 16:44:37,609-INFO-sPtuePyC50HPCFE<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-20 16:44:39</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7340247</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONE_ACCESS_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONE_ACCESS_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>31</VLANID>
+<ALIAS>VLANID_31</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>101</VLANID>
+<ALIAS>E1112187_DSI</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1112187</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>102</VLANID>
+<ALIAS>E1109354_PAN_ASIA_BANKING</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109354_PAN_ASIA_BANKING</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>103</VLANID>
+<ALIAS>E1111010_DFCC_BIL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111010_DFCC_BIL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>104</VLANID>
+<ALIAS>E1112619_DFCC_BANK_BIL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1112619_DFCC_BANK_BIL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>293</VLANID>
+<ALIAS>VLANID_293</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D44714_HNB GRAMEEN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>487</VLANID>
+<ALIAS>VLANID_487</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D45310_SINGER SL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>625</VLANID>
+<ALIAS>VLANID_625</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>650</VLANID>
+<ALIAS>VLANID_650</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>660</VLANID>
+<ALIAS>VLANID_660</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1556</VLANID>
+<ALIAS>VLANID_1556</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1656</VLANID>
+<ALIAS>VLANID_1656</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1900</VLANID>
+<ALIAS>ENET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ENET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>2001</VLANID>
+<ALIAS>VLANID_2001</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D46132_LGN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3000</VLANID>
+<ALIAS>D76234_IDEAL_FINANCE_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D76234_IDEAL_FINANCE_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3001</VLANID>
+<ALIAS>D96835_CEYLON_HOSPITALS_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96835_CEYLON_HOSPITALS_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3002</VLANID>
+<ALIAS>D98590_ASIRI_SURGICAL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D98590_ASIRI_SURGICAL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3003</VLANID>
+<ALIAS>E1100530_DEP_OF_MOTOR_TRAFFIC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1100530_DEP_OF_MOTOR_TRAFFIC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3004</VLANID>
+<ALIAS>E1101075_SOFTLOGIC_FINANCE_PLC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1101075_SOFTLOGIC_FINANCE_PLC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3005</VLANID>
+<ALIAS>E1109841_DEP_OF_ELECTIONS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109841_DEP_OF_ELECTIONS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3006</VLANID>
+<ALIAS>E1111471_ELECTION_OFFICE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111471_ELECTION_OFFICE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3007</VLANID>
+<ALIAS>E1111675_HNB_ASSURANCE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111675_HNB_ASSURANCE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3008</VLANID>
+<ALIAS>E1112620_DFCC_BANK_VPN</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1112620_DFCC_BANK_VPN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3009</VLANID>
+<ALIAS>E1111011_DFCC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111011_DFCC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3025</VLANID>
+<ALIAS>VLANID_3025</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D46727_CARGILLS FOOD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3480</VLANID>
+<ALIAS>D67205_CONTINENTAL_INS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D67205_CONTINENTAL_INS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3538</VLANID>
+<ALIAS>D69132_SL_ POLICE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D69132_SL_ POLICE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3548</VLANID>
+<ALIAS>D69259_SL_POLICE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D69259_SL_POLICE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3635</VLANID>
+<ALIAS>D71550_ANNAI_NAGA_FOOD_CITY</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D71550_ANNAI_NAGA_FOOD_CITY</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3737</VLANID>
+<ALIAS>D76746_STF</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D76746_STF</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3742</VLANID>
+<ALIAS>D77286_BOC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D77286_BOC</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:37,609-INFO-sPtuePyC50HPCFE 0 Succeeded.
+2024-11-20 16:44:37,609-INFO-sPtuePyC50HPCFE End   : =========================================================================
+2024-11-20 16:44:37,610-INFO-sPtuePyC50HPCFE Start : =========================================================================
+2024-11-20 16:44:37,610-INFO-sPtuePyC50HPCFE Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'JA_MA5600T_01', 'FTTH_ZTE_PID': '0-18-0', 'FTTH_HUW_VP': '1', 'FTTH_ONT_SN': 'TDTC3B01BE10', 'IMS_USERID': '94212222153', 'REGID': '0212222153', 'IPTVCOUNT': '0', 'BBCOUNT': '0', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'z8lRG7lVjGJz4IQ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '18', 'FTTH_HUW_PN': '0', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1556', 'IPTVLAN': '1656'}
+2024-11-20 16:44:37,610-INFO-sPtuePyC50HPCFE Input Data : Entree SVLAN
+2024-11-20 16:44:37,610-INFO-sPtuePyC50HPCFE command xml : lst_vlan_huawei.xml
+2024-11-20 16:44:37,807-INFO-sPtuePyC50HPCFE <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>JA_MA5600T_01</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 16:44:37,807-INFO-sPtuePyC50HPCFE Response : =================================
+2024-11-20 16:44:37,808-INFO-sPtuePyC50HPCFE<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-20 16:44:39</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7340247</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONE_ACCESS_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONE_ACCESS_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>31</VLANID>
+<ALIAS>VLANID_31</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>101</VLANID>
+<ALIAS>E1112187_DSI</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1112187</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>102</VLANID>
+<ALIAS>E1109354_PAN_ASIA_BANKING</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109354_PAN_ASIA_BANKING</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>103</VLANID>
+<ALIAS>E1111010_DFCC_BIL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111010_DFCC_BIL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>104</VLANID>
+<ALIAS>E1112619_DFCC_BANK_BIL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1112619_DFCC_BANK_BIL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>293</VLANID>
+<ALIAS>VLANID_293</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D44714_HNB GRAMEEN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>487</VLANID>
+<ALIAS>VLANID_487</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D45310_SINGER SL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>625</VLANID>
+<ALIAS>VLANID_625</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>650</VLANID>
+<ALIAS>VLANID_650</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>660</VLANID>
+<ALIAS>VLANID_660</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1556</VLANID>
+<ALIAS>VLANID_1556</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1656</VLANID>
+<ALIAS>VLANID_1656</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>1900</VLANID>
+<ALIAS>ENET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ENET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>2001</VLANID>
+<ALIAS>VLANID_2001</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D46132_LGN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3000</VLANID>
+<ALIAS>D76234_IDEAL_FINANCE_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D76234_IDEAL_FINANCE_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3001</VLANID>
+<ALIAS>D96835_CEYLON_HOSPITALS_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D96835_CEYLON_HOSPITALS_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3002</VLANID>
+<ALIAS>D98590_ASIRI_SURGICAL</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D98590_ASIRI_SURGICAL</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3003</VLANID>
+<ALIAS>E1100530_DEP_OF_MOTOR_TRAFFIC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1100530_DEP_OF_MOTOR_TRAFFIC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3004</VLANID>
+<ALIAS>E1101075_SOFTLOGIC_FINANCE_PLC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1101075_SOFTLOGIC_FINANCE_PLC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3005</VLANID>
+<ALIAS>E1109841_DEP_OF_ELECTIONS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1109841_DEP_OF_ELECTIONS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3006</VLANID>
+<ALIAS>E1111471_ELECTION_OFFICE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111471_ELECTION_OFFICE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3007</VLANID>
+<ALIAS>E1111675_HNB_ASSURANCE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111675_HNB_ASSURANCE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3008</VLANID>
+<ALIAS>E1112620_DFCC_BANK_VPN</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1112620_DFCC_BANK_VPN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3009</VLANID>
+<ALIAS>E1111011_DFCC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111011_DFCC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3025</VLANID>
+<ALIAS>VLANID_3025</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D46727_CARGILLS FOOD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3480</VLANID>
+<ALIAS>D67205_CONTINENTAL_INS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D67205_CONTINENTAL_INS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3538</VLANID>
+<ALIAS>D69132_SL_ POLICE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D69132_SL_ POLICE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3548</VLANID>
+<ALIAS>D69259_SL_POLICE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D69259_SL_POLICE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3635</VLANID>
+<ALIAS>D71550_ANNAI_NAGA_FOOD_CITY</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D71550_ANNAI_NAGA_FOOD_CITY</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3737</VLANID>
+<ALIAS>D76746_STF</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D76746_STF</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340247</DID>
+<VLANID>3742</VLANID>
+<ALIAS>D77286_BOC</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D77286_BOC</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:37,808-INFO-sPtuePyC50HPCFE 0 Succeeded.
+2024-11-20 16:44:37,808-INFO-sPtuePyC50HPCFE End   : =========================================================================
+2024-11-20 16:44:37,809-INFO-sPtuePyC50HPCFE Start : =========================================================================
+2024-11-20 16:44:37,809-INFO-sPtuePyC50HPCFE Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'JA_MA5600T_01', 'FTTH_ZTE_PID': '0-18-0', 'FTTH_HUW_VP': '1', 'FTTH_ONT_SN': 'TDTC3B01BE10', 'IMS_USERID': '94212222153', 'REGID': '0212222153', 'IPTVCOUNT': '0', 'BBCOUNT': '0', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'z8lRG7lVjGJz4IQ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '18', 'FTTH_HUW_PN': '0', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1556', 'IPTVLAN': '1656'}
+2024-11-20 16:44:37,809-INFO-sPtuePyC50HPCFE command xml : ADD_ONT_HUAWEI_ACS.xml
+2024-11-20 16:44:38,411-INFO-sPtuePyC50HPCFE <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>clarity</wsse:Username>
+        <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+</wsse:Security>
+</soapenv:Header>
+<soapenv:Body>
+    <os:ADD-ONT>
+        <os:MODIFIER>ONT</os:MODIFIER>
+        <os:object>
+            <os:DEV>JA_MA5600T_01</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>18</os:SN>
+            <os:PN>0</os:PN>
+            <os:ONTID>1</os:ONTID>
+        </os:object>
+        <os:Session>1</os:Session>
+        <os:objectParas>
+            <ALIAS>94212222153</ALIAS>
+            <LINEPROF>IOP-ONT</LINEPROF>
+            <SRVPROF></SRVPROF>
+            <os:SERIALNUM>TDTC3B01BE10</os:SERIALNUM>
+            <os:AUTH>SN</os:AUTH>
+            <os:AUTHTIMEOUT></os:AUTHTIMEOUT>
+            <os:VAPROFILE></os:VAPROFILE>
+        </os:objectParas>
+    </os:ADD-ONT>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:38,411-INFO-sPtuePyC50HPCFE Response : =================================
+2024-11-20 16:44:38,415-INFO-sPtuePyC50HPCFE<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:ADDResponse>
+<os:dateTime>2024-11-20 16:44:39</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:ADDResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:38,415-INFO-sPtuePyC50HPCFE 0 Succeeded.
+2024-11-20 16:44:38,415-INFO-sPtuePyC50HPCFE End   : =========================================================================
+2024-11-20 16:44:38,415-INFO-sPtuePyC50HPCFE Start : =========================================================================
+2024-11-20 16:44:38,415-INFO-sPtuePyC50HPCFE Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'JA_MA5600T_01', 'FTTH_ZTE_PID': '0-18-0', 'FTTH_HUW_VP': '1', 'FTTH_ONT_SN': 'TDTC3B01BE10', 'IMS_USERID': '94212222153', 'REGID': '0212222153', 'IPTVCOUNT': '0', 'BBCOUNT': '0', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'z8lRG7lVjGJz4IQ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '18', 'FTTH_HUW_PN': '0', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1556', 'IPTVLAN': '1656'}
+2024-11-20 16:44:38,415-INFO-sPtuePyC50HPCFE command xml : ADD_INT_HUAWEI.xml
+2024-11-20 16:44:38,795-INFO-sPtuePyC50HPCFE <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:CREATE-SERVICEPORT>
+         <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+         <os:object>
+            <os:DEV>JA_MA5600T_01</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>18</os:SN>
+            <os:PN>0</os:PN>
+         </os:object>
+         <os:Session>1</os:Session>
+         <os:objectParas>
+            <os:VLANID>1556</os:VLANID>
+            <os:ONTID>1</os:ONTID>
+            <os:GEMPORTID>20</os:GEMPORTID>
+            <os:TX>50_Mbps</os:TX>
+            <os:RX>100_Mbps</os:RX>
+            <os:INNERVLANID>1000</os:INNERVLANID>
+            <os:UV>20</os:UV>
+            <os:TAGTRANSFORM>3</os:TAGTRANSFORM>
+         </os:objectParas>
+      </os:CREATE-SERVICEPORT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:38,795-INFO-sPtuePyC50HPCFE Response : =================================
+2024-11-20 16:44:38,799-INFO-sPtuePyC50HPCFE<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-20 16:44:40</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:38,799-INFO-sPtuePyC50HPCFE 0 Succeeded.
+2024-11-20 16:44:38,799-INFO-sPtuePyC50HPCFE End   : =========================================================================
+2024-11-20 16:44:38,799-INFO-sPtuePyC50HPCFE Start : =========================================================================
+2024-11-20 16:44:38,799-INFO-sPtuePyC50HPCFE Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'JA_MA5600T_01', 'FTTH_ZTE_PID': '0-18-0', 'FTTH_HUW_VP': '1', 'FTTH_ONT_SN': 'TDTC3B01BE10', 'IMS_USERID': '94212222153', 'REGID': '0212222153', 'IPTVCOUNT': '0', 'BBCOUNT': '0', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'z8lRG7lVjGJz4IQ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '18', 'FTTH_HUW_PN': '0', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1556', 'IPTVLAN': '1656'}
+2024-11-20 16:44:38,799-INFO-sPtuePyC50HPCFE command xml : ADD_VOICE_HUAWEI.xml
+2024-11-20 16:44:39,084-INFO-sPtuePyC50HPCFE <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:CREATE-SERVICEPORT>
+            <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+            <os:object>
+                <os:DEV>JA_MA5600T_01</os:DEV>
+                <os:FN>0</os:FN>
+                <os:SN>18</os:SN>
+                <os:PN>0</os:PN>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:VLANID>660</os:VLANID>
+                <os:ONTID>1</os:ONTID>
+                <os:GEMPORTID>10</os:GEMPORTID>
+                <os:TX>SIP_VOICE</os:TX>
+                <os:RX>SIP_VOICE</os:RX>
+                <os:UV>10</os:UV>
+                <os:TAGTRANSFORM>2</os:TAGTRANSFORM>
+            </os:objectParas>
+        </os:CREATE-SERVICEPORT>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 16:44:39,084-INFO-sPtuePyC50HPCFE Response : =================================
+2024-11-20 16:44:39,084-INFO-sPtuePyC50HPCFE<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-20 16:44:40</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 16:44:39,085-INFO-sPtuePyC50HPCFE 0 Succeeded.
+2024-11-20 16:44:39,085-INFO-sPtuePyC50HPCFE End   : =========================================================================
+2024-11-20 17:41:06,988-INFO-w9HZehUNm7IUFG2 Start : =========================================================================
+2024-11-20 17:41:06,989-INFO-w9HZehUNm7IUFG2 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'PT_MA5600T_02', 'FTTH_ZTE_PID': '0-16-1', 'FTTH_HUW_VP': '10', 'FTTH_ONT_SN': 'DFCD24B9FBF0', 'IMS_USERID': '94212266037', 'REGID': '0212266037', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'YLtjSHGtrq2anI8', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '16', 'FTTH_HUW_PN': '1'}
+2024-11-20 17:41:06,989-INFO-w9HZehUNm7IUFG2 Input Data : VOBB 
+2024-11-20 17:41:06,989-INFO-w9HZehUNm7IUFG2 command xml : lst_vlan_huawei.xml
+2024-11-20 17:41:07,462-INFO-w9HZehUNm7IUFG2 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>PT_MA5600T_02</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 17:41:07,462-INFO-w9HZehUNm7IUFG2 Response : =================================
+2024-11-20 17:41:07,466-INFO-w9HZehUNm7IUFG2<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-20 17:41:09</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7340249</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>18</VLANID>
+<ALIAS>OA_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>OA_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>31</VLANID>
+<ALIAS>VLANID_31</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>101</VLANID>
+<ALIAS>E1108249_PAN_ASIA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108249_PAN_ASIA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>480</VLANID>
+<ALIAS>VLANID_480</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>F37940_SOFTLOGIC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>625</VLANID>
+<ALIAS>VLANID_625</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>650</VLANID>
+<ALIAS>VLANID_650</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>660</VLANID>
+<ALIAS>VLANID_660</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1000</VLANID>
+<ALIAS>Entree</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1559</VLANID>
+<ALIAS>SVLAN</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1659</VLANID>
+<ALIAS>IPTV_SVLAN</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1900</VLANID>
+<ALIAS>ENET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ENET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>2000</VLANID>
+<ALIAS>IPTV</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL> IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>3001</VLANID>
+<ALIAS>E1110689_ARPICO_INSURANCE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110689_ARPICO_INSURANCE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>3002</VLANID>
+<ALIAS>E1110924</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110924</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:07,467-INFO-w9HZehUNm7IUFG2 0 Succeeded.
+2024-11-20 17:41:07,467-INFO-w9HZehUNm7IUFG2 End   : =========================================================================
+2024-11-20 17:41:07,467-INFO-w9HZehUNm7IUFG2 Start : =========================================================================
+2024-11-20 17:41:07,467-INFO-w9HZehUNm7IUFG2 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'PT_MA5600T_02', 'FTTH_ZTE_PID': '0-16-1', 'FTTH_HUW_VP': '10', 'FTTH_ONT_SN': 'DFCD24B9FBF0', 'IMS_USERID': '94212266037', 'REGID': '0212266037', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'YLtjSHGtrq2anI8', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '16', 'FTTH_HUW_PN': '1', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1559', 'IPTVLAN': '1659'}
+2024-11-20 17:41:07,467-INFO-w9HZehUNm7IUFG2 Input Data : Entree SVLAN
+2024-11-20 17:41:07,467-INFO-w9HZehUNm7IUFG2 command xml : lst_vlan_huawei.xml
+2024-11-20 17:41:07,733-INFO-w9HZehUNm7IUFG2 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>PT_MA5600T_02</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 17:41:07,733-INFO-w9HZehUNm7IUFG2 Response : =================================
+2024-11-20 17:41:07,734-INFO-w9HZehUNm7IUFG2<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-20 17:41:09</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7340249</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>18</VLANID>
+<ALIAS>OA_MGT</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>OA_MGT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>31</VLANID>
+<ALIAS>VLANID_31</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>101</VLANID>
+<ALIAS>E1108249_PAN_ASIA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108249_PAN_ASIA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>480</VLANID>
+<ALIAS>VLANID_480</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>F37940_SOFTLOGIC</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>625</VLANID>
+<ALIAS>VLANID_625</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>650</VLANID>
+<ALIAS>VLANID_650</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>660</VLANID>
+<ALIAS>VLANID_660</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1000</VLANID>
+<ALIAS>Entree</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1559</VLANID>
+<ALIAS>SVLAN</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1659</VLANID>
+<ALIAS>IPTV_SVLAN</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>1900</VLANID>
+<ALIAS>ENET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ENET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>2000</VLANID>
+<ALIAS>IPTV</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL> IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>3001</VLANID>
+<ALIAS>E1110689_ARPICO_INSURANCE</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110689_ARPICO_INSURANCE</USERLABEL>
+</os:row>
+<os:row>
+<DID>7340249</DID>
+<VLANID>3002</VLANID>
+<ALIAS>E1110924</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1110924</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:07,734-INFO-w9HZehUNm7IUFG2 0 Succeeded.
+2024-11-20 17:41:07,734-INFO-w9HZehUNm7IUFG2 End   : =========================================================================
+2024-11-20 17:41:07,734-INFO-w9HZehUNm7IUFG2 Start : =========================================================================
+2024-11-20 17:41:07,734-INFO-w9HZehUNm7IUFG2 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'PT_MA5600T_02', 'FTTH_ZTE_PID': '0-16-1', 'FTTH_HUW_VP': '10', 'FTTH_ONT_SN': 'DFCD24B9FBF0', 'IMS_USERID': '94212266037', 'REGID': '0212266037', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'YLtjSHGtrq2anI8', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '16', 'FTTH_HUW_PN': '1', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1559', 'IPTVLAN': '1659'}
+2024-11-20 17:41:07,734-INFO-w9HZehUNm7IUFG2 command xml : ADD_ONT_HUAWEI_ACS.xml
+2024-11-20 17:41:08,634-INFO-w9HZehUNm7IUFG2 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>clarity</wsse:Username>
+        <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+</wsse:Security>
+</soapenv:Header>
+<soapenv:Body>
+    <os:ADD-ONT>
+        <os:MODIFIER>ONT</os:MODIFIER>
+        <os:object>
+            <os:DEV>PT_MA5600T_02</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>16</os:SN>
+            <os:PN>1</os:PN>
+            <os:ONTID>10</os:ONTID>
+        </os:object>
+        <os:Session>1</os:Session>
+        <os:objectParas>
+            <ALIAS>94212266037</ALIAS>
+            <LINEPROF>IOP-ONT</LINEPROF>
+            <SRVPROF></SRVPROF>
+            <os:SERIALNUM>DFCD24B9FBF0</os:SERIALNUM>
+            <os:AUTH>SN</os:AUTH>
+            <os:AUTHTIMEOUT></os:AUTHTIMEOUT>
+            <os:VAPROFILE></os:VAPROFILE>
+        </os:objectParas>
+    </os:ADD-ONT>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:08,634-INFO-w9HZehUNm7IUFG2 Response : =================================
+2024-11-20 17:41:08,638-INFO-w9HZehUNm7IUFG2<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:ADDResponse>
+<os:dateTime>2024-11-20 17:41:10</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:ADDResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:08,638-INFO-w9HZehUNm7IUFG2 0 Succeeded.
+2024-11-20 17:41:08,638-INFO-w9HZehUNm7IUFG2 End   : =========================================================================
+2024-11-20 17:41:08,638-INFO-w9HZehUNm7IUFG2 Start : =========================================================================
+2024-11-20 17:41:08,638-INFO-w9HZehUNm7IUFG2 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'PT_MA5600T_02', 'FTTH_ZTE_PID': '0-16-1', 'FTTH_HUW_VP': '10', 'FTTH_ONT_SN': 'DFCD24B9FBF0', 'IMS_USERID': '94212266037', 'REGID': '0212266037', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'YLtjSHGtrq2anI8', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '16', 'FTTH_HUW_PN': '1', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1559', 'IPTVLAN': '1659'}
+2024-11-20 17:41:08,638-INFO-w9HZehUNm7IUFG2 command xml : ADD_INT_HUAWEI.xml
+2024-11-20 17:41:09,093-INFO-w9HZehUNm7IUFG2 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:CREATE-SERVICEPORT>
+         <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+         <os:object>
+            <os:DEV>PT_MA5600T_02</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>16</os:SN>
+            <os:PN>1</os:PN>
+         </os:object>
+         <os:Session>1</os:Session>
+         <os:objectParas>
+            <os:VLANID>1559</os:VLANID>
+            <os:ONTID>10</os:ONTID>
+            <os:GEMPORTID>20</os:GEMPORTID>
+            <os:TX>50_Mbps</os:TX>
+            <os:RX>100_Mbps</os:RX>
+            <os:INNERVLANID>1000</os:INNERVLANID>
+            <os:UV>20</os:UV>
+            <os:TAGTRANSFORM>3</os:TAGTRANSFORM>
+         </os:objectParas>
+      </os:CREATE-SERVICEPORT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:09,094-INFO-w9HZehUNm7IUFG2 Response : =================================
+2024-11-20 17:41:09,097-INFO-w9HZehUNm7IUFG2<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-20 17:41:10</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:09,097-INFO-w9HZehUNm7IUFG2 0 Succeeded.
+2024-11-20 17:41:09,097-INFO-w9HZehUNm7IUFG2 End   : =========================================================================
+2024-11-20 17:41:09,098-INFO-w9HZehUNm7IUFG2 Start : =========================================================================
+2024-11-20 17:41:09,098-INFO-w9HZehUNm7IUFG2 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'PT_MA5600T_02', 'FTTH_ZTE_PID': '0-16-1', 'FTTH_HUW_VP': '10', 'FTTH_ONT_SN': 'DFCD24B9FBF0', 'IMS_USERID': '94212266037', 'REGID': '0212266037', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '21', 'VOICEPORT': '1', 'PWD': 'YLtjSHGtrq2anI8', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '16', 'FTTH_HUW_PN': '1', 'VOBB': '660', 'EVLAN': '1000', 'SVLAN': '1559', 'IPTVLAN': '1659'}
+2024-11-20 17:41:09,098-INFO-w9HZehUNm7IUFG2 command xml : ADD_VOICE_HUAWEI.xml
+2024-11-20 17:41:09,535-INFO-w9HZehUNm7IUFG2 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:CREATE-SERVICEPORT>
+            <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+            <os:object>
+                <os:DEV>PT_MA5600T_02</os:DEV>
+                <os:FN>0</os:FN>
+                <os:SN>16</os:SN>
+                <os:PN>1</os:PN>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:VLANID>660</os:VLANID>
+                <os:ONTID>10</os:ONTID>
+                <os:GEMPORTID>10</os:GEMPORTID>
+                <os:TX>SIP_VOICE</os:TX>
+                <os:RX>SIP_VOICE</os:RX>
+                <os:UV>10</os:UV>
+                <os:TAGTRANSFORM>2</os:TAGTRANSFORM>
+            </os:objectParas>
+        </os:CREATE-SERVICEPORT>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-20 17:41:09,535-INFO-w9HZehUNm7IUFG2 Response : =================================
+2024-11-20 17:41:09,539-INFO-w9HZehUNm7IUFG2<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-20 17:41:11</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-20 17:41:09,539-INFO-w9HZehUNm7IUFG2 0 Succeeded.
+2024-11-20 17:41:09,539-INFO-w9HZehUNm7IUFG2 End   : =========================================================================
+2024-11-21 13:32:48,130-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:48,130-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14'}
+2024-11-21 13:32:48,130-INFO-WPW14u91gzlqksi Input Data : VOBB 
+2024-11-21 13:32:48,130-INFO-WPW14u91gzlqksi command xml : lst_vlan_huawei.xml
+2024-11-21 13:32:48,295-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>HI_MA5600T_04</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 13:32:48,295-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:48,299-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-21 13:32:48</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341362</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONE ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONE ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>32</VLANID>
+<ALIAS>VLANID_32</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>626</VLANID>
+<ALIAS>VLANID_626</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>651</VLANID>
+<ALIAS>VLANID_651</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>661</VLANID>
+<ALIAS>VLANID_661</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1524</VLANID>
+<ALIAS>VLANID_1524</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1624</VLANID>
+<ALIAS>VLANID_1624</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1900</VLANID>
+<ALIAS>E_NET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E_NET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>3001</VLANID>
+<ALIAS>E1111309_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111309_CARGILLS</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:48,299-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:48,300-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:48,300-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:48,300-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:48,300-INFO-WPW14u91gzlqksi Input Data : Entree SVLAN
+2024-11-21 13:32:48,300-INFO-WPW14u91gzlqksi command xml : lst_vlan_huawei.xml
+2024-11-21 13:32:48,482-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>HI_MA5600T_04</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 13:32:48,482-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:48,486-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-21 13:32:49</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341362</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONE ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONE ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>32</VLANID>
+<ALIAS>VLANID_32</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>626</VLANID>
+<ALIAS>VLANID_626</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>651</VLANID>
+<ALIAS>VLANID_651</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>661</VLANID>
+<ALIAS>VLANID_661</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1524</VLANID>
+<ALIAS>VLANID_1524</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1624</VLANID>
+<ALIAS>VLANID_1624</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1900</VLANID>
+<ALIAS>E_NET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E_NET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>3001</VLANID>
+<ALIAS>E1111309_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111309_CARGILLS</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:48,487-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:48,487-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:48,487-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:48,487-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:48,487-INFO-WPW14u91gzlqksi Input Data : IPTV_SVLAN IPTV
+2024-11-21 13:32:48,487-INFO-WPW14u91gzlqksi command xml : lst_vlan_huawei.xml
+2024-11-21 13:32:48,683-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>HI_MA5600T_04</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 13:32:48,683-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:48,684-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-21 13:32:49</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341362</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>18</VLANID>
+<ALIAS>ONE ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ONE ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>32</VLANID>
+<ALIAS>VLANID_32</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>ROUTER_MANAGEMENT</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>626</VLANID>
+<ALIAS>VLANID_626</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Signalling</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>651</VLANID>
+<ALIAS>VLANID_651</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>NB_Media</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>661</VLANID>
+<ALIAS>VLANID_661</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1524</VLANID>
+<ALIAS>VLANID_1524</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1624</VLANID>
+<ALIAS>VLANID_1624</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>1900</VLANID>
+<ALIAS>E_NET_ACCESS</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E_NET_ACCESS</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341362</DID>
+<VLANID>3001</VLANID>
+<ALIAS>E1111309_CARGILLS</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111309_CARGILLS</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:48,684-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:48,684-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:48,684-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:48,684-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:48,684-INFO-WPW14u91gzlqksi command xml : ADD_ONT_HUAWEI_ACS.xml
+2024-11-21 13:32:49,217-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>clarity</wsse:Username>
+        <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+</wsse:Security>
+</soapenv:Header>
+<soapenv:Body>
+    <os:ADD-ONT>
+        <os:MODIFIER>ONT</os:MODIFIER>
+        <os:object>
+            <os:DEV>HI_MA5600T_04</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>1</os:SN>
+            <os:PN>14</os:PN>
+            <os:ONTID>58</os:ONTID>
+        </os:object>
+        <os:Session>1</os:Session>
+        <os:objectParas>
+            <ALIAS>94912274281</ALIAS>
+            <LINEPROF>IOP-ONT</LINEPROF>
+            <SRVPROF></SRVPROF>
+            <os:SERIALNUM>TDTC3B0008C0</os:SERIALNUM>
+            <os:AUTH>SN</os:AUTH>
+            <os:AUTHTIMEOUT></os:AUTHTIMEOUT>
+            <os:VAPROFILE></os:VAPROFILE>
+        </os:objectParas>
+    </os:ADD-ONT>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:49,217-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:49,221-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:ADDResponse>
+<os:dateTime>2024-11-21 13:32:49</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:ADDResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:49,221-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:49,221-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:49,221-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:49,221-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:49,221-INFO-WPW14u91gzlqksi command xml : ADD_INT_HUAWEI.xml
+2024-11-21 13:32:49,760-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:CREATE-SERVICEPORT>
+         <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+         <os:object>
+            <os:DEV>HI_MA5600T_04</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>1</os:SN>
+            <os:PN>14</os:PN>
+         </os:object>
+         <os:Session>1</os:Session>
+         <os:objectParas>
+            <os:VLANID>1524</os:VLANID>
+            <os:ONTID>58</os:ONTID>
+            <os:GEMPORTID>20</os:GEMPORTID>
+            <os:TX>50_Mbps</os:TX>
+            <os:RX>100_Mbps</os:RX>
+            <os:INNERVLANID>1000</os:INNERVLANID>
+            <os:UV>20</os:UV>
+            <os:TAGTRANSFORM>3</os:TAGTRANSFORM>
+         </os:objectParas>
+      </os:CREATE-SERVICEPORT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:49,760-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:49,763-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-21 13:32:50</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:49,763-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:49,763-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:49,764-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:49,764-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:49,764-INFO-WPW14u91gzlqksi command xml : ADD_VOICE_HUAWEI.xml
+2024-11-21 13:32:50,077-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:CREATE-SERVICEPORT>
+            <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+            <os:object>
+                <os:DEV>HI_MA5600T_04</os:DEV>
+                <os:FN>0</os:FN>
+                <os:SN>1</os:SN>
+                <os:PN>14</os:PN>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:VLANID>661</os:VLANID>
+                <os:ONTID>58</os:ONTID>
+                <os:GEMPORTID>10</os:GEMPORTID>
+                <os:TX>SIP_VOICE</os:TX>
+                <os:RX>SIP_VOICE</os:RX>
+                <os:UV>10</os:UV>
+                <os:TAGTRANSFORM>2</os:TAGTRANSFORM>
+            </os:objectParas>
+        </os:CREATE-SERVICEPORT>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 13:32:50,077-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:50,078-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-21 13:32:50</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:50,078-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:50,078-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:50,078-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:50,078-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:50,078-INFO-WPW14u91gzlqksi command xml : ADD_IPTV_HUAWEI.xml
+2024-11-21 13:32:50,368-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:CREATE-SERVICEPORT>
+            <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+            <os:object>
+                <os:DEV>HI_MA5600T_04</os:DEV>
+                <os:FN>0</os:FN>
+                <os:SN>1</os:SN>
+                <os:PN>14</os:PN>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:VLANID>1624</os:VLANID>
+                <os:ONTID>58</os:ONTID>
+                <os:GEMPORTID>30</os:GEMPORTID>
+                <os:TX>IPTV_HD_UP</os:TX>
+                <os:RX>IPTV_HD</os:RX>
+                <os:INNERVLANID>2000</os:INNERVLANID>
+                <os:UV>30</os:UV>
+                <os:TAGTRANSFORM>3</os:TAGTRANSFORM>
+            </os:objectParas>
+        </os:CREATE-SERVICEPORT>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 13:32:50,368-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:50,372-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-21 13:32:51</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:50,372-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:50,372-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:32:50,373-INFO-WPW14u91gzlqksi Start : =========================================================================
+2024-11-21 13:32:50,373-INFO-WPW14u91gzlqksi Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'HI_MA5600T_04', 'FTTH_ZTE_PID': '0-1-14', 'FTTH_HUW_VP': '58', 'FTTH_ONT_SN': 'TDTC3B0008C0', 'IMS_USERID': '94912274281', 'REGID': '0912274281', 'IPTVCOUNT': '1', 'BBCOUNT': '0', 'SOURCE': '91', 'VOICEPORT': '1', 'PWD': 'm5HcH0tdcAIWLiZ', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '14', 'VOBB': '661', 'EVLAN': '1000', 'SVLAN': '1524', 'IPTVLAN': '1624'}
+2024-11-21 13:32:50,373-INFO-WPW14u91gzlqksi command xml : ADD_JOINT_NTV_HUAWEI.xml
+2024-11-21 13:32:50,678-INFO-WPW14u91gzlqksi <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:JOIN-NTVUSER>
+         <os:MODIFIER>NTVUSR</os:MODIFIER>
+         <os:object>
+            <os:DEV>HI_MA5600T_04</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>1</os:SN>
+            <os:PN>14</os:PN>
+            <os:ONTID>58</os:ONTID>
+            <os:GEMPORTID>30</os:GEMPORTID>
+         </os:object>
+         <os:Session>1</os:Session>
+         <os:objectParas>
+            <os:AUTH>2</os:AUTH>
+            <os:MAXGRP>8</os:MAXGRP>
+            <os:QCKLEV>IMMEDIATE</os:QCKLEV>
+            <os:IGMPVLAN>50</os:IGMPVLAN>
+         </os:objectParas>
+      </os:JOIN-NTVUSER>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:50,678-INFO-WPW14u91gzlqksi Response : =================================
+2024-11-21 13:32:50,682-INFO-WPW14u91gzlqksi<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:JOINResponse>
+<os:dateTime>2024-11-21 13:32:51</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:JOINResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:32:50,682-INFO-WPW14u91gzlqksi 0 Succeeded.
+2024-11-21 13:32:50,682-INFO-WPW14u91gzlqksi End   : =========================================================================
+2024-11-21 13:45:53,857-INFO-UBe78Jtrcyq5ndV Start : =========================================================================
+2024-11-21 13:45:53,857-INFO-UBe78Jtrcyq5ndV Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'KDL_MA5800X17_03', 'FTTH_ZTE_PID': '0-4-12', 'FTTH_ONT_SN': 'DFCD22C6F9D0', 'IMS_USERID': '94112992766', 'FTTH_HUW_VP': '25', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '12'}
+2024-11-21 13:45:53,857-INFO-UBe78Jtrcyq5ndV command xml : DEL_ONT_HUAWEI.xml
+2024-11-21 13:45:54,897-INFO-UBe78Jtrcyq5ndV <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:DELETE-ONT>
+         <os:MODIFIER>ONT</os:MODIFIER>
+         <os:object>
+            <os:DEV>KDL_MA5800X17_03</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>4</os:SN>
+            <os:PN>12</os:PN>
+            <os:ONTID>25</os:ONTID>
+            <os:PWD></os:PWD>
+         </os:object>
+         <os:Session>1</os:Session>
+      </os:DELETE-ONT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:45:54,897-INFO-UBe78Jtrcyq5ndV Response : =================================
+2024-11-21 13:45:54,901-INFO-UBe78Jtrcyq5ndV<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:DELETEResponse>
+<os:dateTime>2024-11-21 13:45:55</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:DELETEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 13:45:54,901-INFO-UBe78Jtrcyq5ndV 0 Succeeded.
+2024-11-21 13:45:54,901-INFO-UBe78Jtrcyq5ndV End   : =========================================================================
+2024-11-21 14:06:52,995-INFO-4yZNgvCd5ILrqLq Start : =========================================================================
+2024-11-21 14:06:52,995-INFO-4yZNgvCd5ILrqLq Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'STK_MA5800X7_03', 'FTTH_ZTE_PID': '0-3-7', 'FTTH_ONT_SN': 'DFCD24BAB824', 'IMS_USERID': '94212052961', 'FTTH_HUW_VP': '28', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '3', 'FTTH_HUW_PN': '7'}
+2024-11-21 14:06:52,995-INFO-4yZNgvCd5ILrqLq command xml : DEL_ONT_HUAWEI.xml
+2024-11-21 14:06:53,911-INFO-4yZNgvCd5ILrqLq <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:DELETE-ONT>
+         <os:MODIFIER>ONT</os:MODIFIER>
+         <os:object>
+            <os:DEV>STK_MA5800X7_03</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>3</os:SN>
+            <os:PN>7</os:PN>
+            <os:ONTID>28</os:ONTID>
+            <os:PWD></os:PWD>
+         </os:object>
+         <os:Session>1</os:Session>
+      </os:DELETE-ONT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 14:06:53,911-INFO-4yZNgvCd5ILrqLq Response : =================================
+2024-11-21 14:06:53,917-INFO-4yZNgvCd5ILrqLq<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:DELETEResponse>
+<os:dateTime>2024-11-21 14:06:54</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:DELETEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 14:06:53,917-INFO-4yZNgvCd5ILrqLq 0 Succeeded.
+2024-11-21 14:06:53,917-INFO-4yZNgvCd5ILrqLq End   : =========================================================================
+2024-11-21 16:47:18,623-INFO-NjI6TC97nlUCkdB Start : =========================================================================
+2024-11-21 16:47:18,623-INFO-NjI6TC97nlUCkdB Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'BT_MA5800X7_02', 'FTTH_ZTE_PID': '0-4-15', 'FTTH_ONT_SN': 'DFCD24BBB310', 'IMS_USERID': '94342294718', 'FTTH_HUW_VP': '51', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '15'}
+2024-11-21 16:47:18,624-INFO-NjI6TC97nlUCkdB command xml : DEL_ONT_HUAWEI.xml
+2024-11-21 16:47:19,307-INFO-NjI6TC97nlUCkdB <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:DELETE-ONT>
+         <os:MODIFIER>ONT</os:MODIFIER>
+         <os:object>
+            <os:DEV>BT_MA5800X7_02</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>4</os:SN>
+            <os:PN>15</os:PN>
+            <os:ONTID>51</os:ONTID>
+            <os:PWD></os:PWD>
+         </os:object>
+         <os:Session>1</os:Session>
+      </os:DELETE-ONT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:47:19,307-INFO-NjI6TC97nlUCkdB Response : =================================
+2024-11-21 16:47:19,311-INFO-NjI6TC97nlUCkdB<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:DELETEResponse>
+<os:dateTime>2024-11-21 16:47:20</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:DELETEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:47:19,312-INFO-NjI6TC97nlUCkdB 0 Succeeded.
+2024-11-21 16:47:19,312-INFO-NjI6TC97nlUCkdB End   : =========================================================================
+2024-11-21 16:48:04,244-INFO-WzYBeLOm02f92r9 Start : =========================================================================
+2024-11-21 16:48:04,244-INFO-WzYBeLOm02f92r9 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'BT_MA5800X7_02', 'FTTH_ZTE_PID': '0-4-15', 'FTTH_HUW_VP': '51', 'FTTH_ONT_SN': 'DFCD24BBB310', 'IMS_USERID': '94342294718', 'REGID': '0342294718', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '34', 'VOICEPORT': '1', 'PWD': '8p2bP9574TScuye', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '15'}
+2024-11-21 16:48:04,244-INFO-WzYBeLOm02f92r9 Input Data : VOBB 
+2024-11-21 16:48:04,244-INFO-WzYBeLOm02f92r9 command xml : lst_vlan_huawei.xml
+2024-11-21 16:48:04,476-INFO-WzYBeLOm02f92r9 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>BT_MA5800X7_02</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 16:48:04,476-INFO-WzYBeLOm02f92r9 Response : =================================
+2024-11-21 16:48:04,481-INFO-WzYBeLOm02f92r9<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-21 16:48:05</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341383</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>18</VLANID>
+<ALIAS>VLANID_18</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>One_Acc_Mgt</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>36</VLANID>
+<ALIAS>VLANID_36</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Cisco Router Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>101</VLANID>
+<ALIAS>E1111621_NWDB_ALUTHGAMA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111621_NWDB_ALUTHGAMA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>662</VLANID>
+<ALIAS>VLANID_662</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1033</VLANID>
+<ALIAS>VLANID_1033</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103884_Michel Private Ltd</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1040</VLANID>
+<ALIAS>E1106223_Inner</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1106223</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1522</VLANID>
+<ALIAS>VLANID_1522</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1622</VLANID>
+<ALIAS>VLANID_1622</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1864</VLANID>
+<ALIAS>E1103884_E1106223_SVLAN</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103884_E1106223_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3001</VLANID>
+<ALIAS>VLANID_3001</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D97186_SLIC_ALUTGAMA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3002</VLANID>
+<ALIAS>VLANID_3002</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D99467_ASIRI</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3004</VLANID>
+<ALIAS>E1106701_ASB_INNOVATIONS_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1106701_ASB_INNOVATIONS_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3005</VLANID>
+<ALIAS>E1108176_COMMERCIAL_CREDIT</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108176_COMMERCIAL_CREDIT</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:04,481-INFO-WzYBeLOm02f92r9 0 Succeeded.
+2024-11-21 16:48:04,481-INFO-WzYBeLOm02f92r9 End   : =========================================================================
+2024-11-21 16:48:04,481-INFO-WzYBeLOm02f92r9 Start : =========================================================================
+2024-11-21 16:48:04,482-INFO-WzYBeLOm02f92r9 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'BT_MA5800X7_02', 'FTTH_ZTE_PID': '0-4-15', 'FTTH_HUW_VP': '51', 'FTTH_ONT_SN': 'DFCD24BBB310', 'IMS_USERID': '94342294718', 'REGID': '0342294718', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '34', 'VOICEPORT': '1', 'PWD': '8p2bP9574TScuye', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '15', 'VOBB': '662', 'EVLAN': '1000', 'SVLAN': '1522', 'IPTVLAN': '1622'}
+2024-11-21 16:48:04,482-INFO-WzYBeLOm02f92r9 Input Data : Entree SVLAN
+2024-11-21 16:48:04,482-INFO-WzYBeLOm02f92r9 command xml : lst_vlan_huawei.xml
+2024-11-21 16:48:04,721-INFO-WzYBeLOm02f92r9 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:QUERY-VLAN>
+            <os:MODIFIER>VLAN</os:MODIFIER>
+            <os:object>
+                <os:DEV>BT_MA5800X7_02</os:DEV>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:SHOWOPTION>USERLABEL</os:SHOWOPTION>
+            </os:objectParas>
+        </os:QUERY-VLAN>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 16:48:04,721-INFO-WzYBeLOm02f92r9 Response : =================================
+2024-11-21 16:48:04,721-INFO-WzYBeLOm02f92r9<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:QUERYResponse>
+<os:dateTime>2024-11-21 16:48:05</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID>7341383</os:DID>
+<os:InventoryBlock>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1</VLANID>
+<ALIAS>VLANID_1</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>--</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>18</VLANID>
+<ALIAS>VLANID_18</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>One_Acc_Mgt</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>36</VLANID>
+<ALIAS>VLANID_36</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>50</VLANID>
+<ALIAS>VLANID_50</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Multicast</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>77</VLANID>
+<ALIAS>VLANID_77</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Cisco Router Management</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>101</VLANID>
+<ALIAS>E1111621_NWDB_ALUTHGAMA</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1111621_NWDB_ALUTHGAMA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>662</VLANID>
+<ALIAS>VLANID_662</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>VOBB</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1000</VLANID>
+<ALIAS>VLANID_1000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>Entree</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1033</VLANID>
+<ALIAS>VLANID_1033</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103884_Michel Private Ltd</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1040</VLANID>
+<ALIAS>E1106223_Inner</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1106223</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1522</VLANID>
+<ALIAS>VLANID_1522</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1622</VLANID>
+<ALIAS>VLANID_1622</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>1864</VLANID>
+<ALIAS>E1103884_E1106223_SVLAN</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1103884_E1106223_SVLAN</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>2000</VLANID>
+<ALIAS>VLANID_2000</ALIAS>
+<VLANTYPE>SMART</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>IPTV</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3001</VLANID>
+<ALIAS>VLANID_3001</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D97186_SLIC_ALUTGAMA</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3002</VLANID>
+<ALIAS>VLANID_3002</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>D99467_ASIRI</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3004</VLANID>
+<ALIAS>E1106701_ASB_INNOVATIONS_PVT_LTD</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1106701_ASB_INNOVATIONS_PVT_LTD</USERLABEL>
+</os:row>
+<os:row>
+<DID>7341383</DID>
+<VLANID>3005</VLANID>
+<ALIAS>E1108176_COMMERCIAL_CREDIT</ALIAS>
+<VLANTYPE>MUX</VLANTYPE>
+<TSN>--</TSN>
+<USERLABEL>E1108176_COMMERCIAL_CREDIT</USERLABEL>
+</os:row>
+</os:InventoryBlock>
+</os:QUERYResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:04,722-INFO-WzYBeLOm02f92r9 0 Succeeded.
+2024-11-21 16:48:04,722-INFO-WzYBeLOm02f92r9 End   : =========================================================================
+2024-11-21 16:48:04,722-INFO-WzYBeLOm02f92r9 Start : =========================================================================
+2024-11-21 16:48:04,722-INFO-WzYBeLOm02f92r9 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'BT_MA5800X7_02', 'FTTH_ZTE_PID': '0-4-15', 'FTTH_HUW_VP': '51', 'FTTH_ONT_SN': 'DFCD24BBB310', 'IMS_USERID': '94342294718', 'REGID': '0342294718', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '34', 'VOICEPORT': '1', 'PWD': '8p2bP9574TScuye', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '15', 'VOBB': '662', 'EVLAN': '1000', 'SVLAN': '1522', 'IPTVLAN': '1622'}
+2024-11-21 16:48:04,722-INFO-WzYBeLOm02f92r9 command xml : ADD_ONT_HUAWEI_ACS.xml
+2024-11-21 16:48:05,515-INFO-WzYBeLOm02f92r9 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>clarity</wsse:Username>
+        <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+</wsse:Security>
+</soapenv:Header>
+<soapenv:Body>
+    <os:ADD-ONT>
+        <os:MODIFIER>ONT</os:MODIFIER>
+        <os:object>
+            <os:DEV>BT_MA5800X7_02</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>4</os:SN>
+            <os:PN>15</os:PN>
+            <os:ONTID>51</os:ONTID>
+        </os:object>
+        <os:Session>1</os:Session>
+        <os:objectParas>
+            <ALIAS>94342294718</ALIAS>
+            <LINEPROF>IOP-ONT</LINEPROF>
+            <SRVPROF></SRVPROF>
+            <os:SERIALNUM>DFCD24BBB310</os:SERIALNUM>
+            <os:AUTH>SN</os:AUTH>
+            <os:AUTHTIMEOUT></os:AUTHTIMEOUT>
+            <os:VAPROFILE></os:VAPROFILE>
+        </os:objectParas>
+    </os:ADD-ONT>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:05,516-INFO-WzYBeLOm02f92r9 Response : =================================
+2024-11-21 16:48:05,520-INFO-WzYBeLOm02f92r9<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:ADDResponse>
+<os:dateTime>2024-11-21 16:48:06</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:ADDResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:05,520-INFO-WzYBeLOm02f92r9 0 Succeeded.
+2024-11-21 16:48:05,520-INFO-WzYBeLOm02f92r9 End   : =========================================================================
+2024-11-21 16:48:05,520-INFO-WzYBeLOm02f92r9 Start : =========================================================================
+2024-11-21 16:48:05,520-INFO-WzYBeLOm02f92r9 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'BT_MA5800X7_02', 'FTTH_ZTE_PID': '0-4-15', 'FTTH_HUW_VP': '51', 'FTTH_ONT_SN': 'DFCD24BBB310', 'IMS_USERID': '94342294718', 'REGID': '0342294718', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '34', 'VOICEPORT': '1', 'PWD': '8p2bP9574TScuye', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '15', 'VOBB': '662', 'EVLAN': '1000', 'SVLAN': '1522', 'IPTVLAN': '1622'}
+2024-11-21 16:48:05,520-INFO-WzYBeLOm02f92r9 command xml : ADD_INT_HUAWEI.xml
+2024-11-21 16:48:05,826-INFO-WzYBeLOm02f92r9 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:CREATE-SERVICEPORT>
+         <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+         <os:object>
+            <os:DEV>BT_MA5800X7_02</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>4</os:SN>
+            <os:PN>15</os:PN>
+         </os:object>
+         <os:Session>1</os:Session>
+         <os:objectParas>
+            <os:VLANID>1522</os:VLANID>
+            <os:ONTID>51</os:ONTID>
+            <os:GEMPORTID>20</os:GEMPORTID>
+            <os:TX>50_Mbps</os:TX>
+            <os:RX>100_Mbps</os:RX>
+            <os:INNERVLANID>1000</os:INNERVLANID>
+            <os:UV>20</os:UV>
+            <os:TAGTRANSFORM>3</os:TAGTRANSFORM>
+         </os:objectParas>
+      </os:CREATE-SERVICEPORT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:05,827-INFO-WzYBeLOm02f92r9 Response : =================================
+2024-11-21 16:48:05,830-INFO-WzYBeLOm02f92r9<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-21 16:48:06</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:05,830-INFO-WzYBeLOm02f92r9 0 Succeeded.
+2024-11-21 16:48:05,830-INFO-WzYBeLOm02f92r9 End   : =========================================================================
+2024-11-21 16:48:05,831-INFO-WzYBeLOm02f92r9 Start : =========================================================================
+2024-11-21 16:48:05,831-INFO-WzYBeLOm02f92r9 Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'BT_MA5800X7_02', 'FTTH_ZTE_PID': '0-4-15', 'FTTH_HUW_VP': '51', 'FTTH_ONT_SN': 'DFCD24BBB310', 'IMS_USERID': '94342294718', 'REGID': '0342294718', 'IPTVCOUNT': '0', 'BBCOUNT': '1', 'SOURCE': '34', 'VOICEPORT': '1', 'PWD': '8p2bP9574TScuye', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '4', 'FTTH_HUW_PN': '15', 'VOBB': '662', 'EVLAN': '1000', 'SVLAN': '1522', 'IPTVLAN': '1622'}
+2024-11-21 16:48:05,831-INFO-WzYBeLOm02f92r9 command xml : ADD_VOICE_HUAWEI.xml
+2024-11-21 16:48:06,099-INFO-WzYBeLOm02f92r9 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>clarity</wsse:Username>
+            <wsse:Password>Test1234#</wsse:Password>
+        </wsse:UsernameToken>
+    </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <os:CREATE-SERVICEPORT>
+            <os:MODIFIER>SERVICEPORT</os:MODIFIER>
+            <os:object>
+                <os:DEV>BT_MA5800X7_02</os:DEV>
+                <os:FN>0</os:FN>
+                <os:SN>4</os:SN>
+                <os:PN>15</os:PN>
+            </os:object>
+            <os:Session>1</os:Session>
+            <os:objectParas>
+                <os:VLANID>662</os:VLANID>
+                <os:ONTID>51</os:ONTID>
+                <os:GEMPORTID>10</os:GEMPORTID>
+                <os:TX>SIP_VOICE</os:TX>
+                <os:RX>SIP_VOICE</os:RX>
+                <os:UV>10</os:UV>
+                <os:TAGTRANSFORM>2</os:TAGTRANSFORM>
+            </os:objectParas>
+        </os:CREATE-SERVICEPORT>
+    </soapenv:Body>
+</soapenv:Envelope>
+2024-11-21 16:48:06,099-INFO-WzYBeLOm02f92r9 Response : =================================
+2024-11-21 16:48:06,100-INFO-WzYBeLOm02f92r9<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:CREATEResponse>
+<os:dateTime>2024-11-21 16:48:06</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:CREATEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 16:48:06,100-INFO-WzYBeLOm02f92r9 0 Succeeded.
+2024-11-21 16:48:06,100-INFO-WzYBeLOm02f92r9 End   : =========================================================================
+2024-11-21 17:56:30,678-INFO-UHsxwSKSmIx6eQU Start : =========================================================================
+2024-11-21 17:56:30,678-INFO-UHsxwSKSmIx6eQU Input Data : {'OLT_NAME': 'HUAWEI', 'ADSL_ZTE_DNAME': 'UNW_MA5800X7_02', 'FTTH_ZTE_PID': '0-1-3', 'FTTH_ONT_SN': 'DFCD24BB5BE0', 'IMS_USERID': '94912251641', 'FTTH_HUW_VP': '48', 'FTTH_HUW_FN': '0', 'FTTH_HUW_SN': '1', 'FTTH_HUW_PN': '3'}
+2024-11-21 17:56:30,678-INFO-UHsxwSKSmIx6eQU command xml : DEL_ONT_HUAWEI.xml
+2024-11-21 17:56:31,424-INFO-UHsxwSKSmIx6eQU <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <os:DELETE-ONT>
+         <os:MODIFIER>ONT</os:MODIFIER>
+         <os:object>
+            <os:DEV>UNW_MA5800X7_02</os:DEV>
+            <os:FN>0</os:FN>
+            <os:SN>1</os:SN>
+            <os:PN>3</os:PN>
+            <os:ONTID>48</os:ONTID>
+            <os:PWD></os:PWD>
+         </os:object>
+         <os:Session>1</os:Session>
+      </os:DELETE-ONT>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 17:56:31,424-INFO-UHsxwSKSmIx6eQU Response : =================================
+2024-11-21 17:56:31,430-INFO-UHsxwSKSmIx6eQU<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+<soapenv:Header>
+<os:OS_Header/>
+</soapenv:Header>
+<soapenv:Body>
+<os:DELETEResponse>
+<os:dateTime>2024-11-21 17:56:32</os:dateTime>
+<os:errCode>0</os:errCode>
+<os:errDesc>Succeeded.</os:errDesc>
+<os:Session>1</os:Session>
+<os:DID/>
+</os:DELETEResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+2024-11-21 17:56:31,431-INFO-UHsxwSKSmIx6eQU 0 Succeeded.
+2024-11-21 17:56:31,431-INFO-UHsxwSKSmIx6eQU End   : =========================================================================
